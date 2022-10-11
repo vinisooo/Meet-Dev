@@ -1,1 +1,32 @@
-/* Desenvolva a estilização da sua página aqui */
+.main-header{
+    padding-top: 2rem;
+}
+
+.filter-nav{
+    gap: 32px;
+    padding-top: 32px;
+}
+
+@media (min-width: 750px) {
+    .users-list{
+        overflow: auto;
+        flex-wrap: wrap;
+        gap: 43px;
+    }
+
+    .fade-out{
+        display: none;
+    }
+
+    .filter-nav{
+        flex-direction: column-reverse;
+        transform: translateY(-60px);
+    }
+
+    .header-nav-buttons{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}

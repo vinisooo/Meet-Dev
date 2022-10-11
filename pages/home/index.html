@@ -1,15 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/globalStyles.css">
+  <link rel="stylesheet" href="/styles/flex.css">
+  <link rel="stylesheet" href="/styles/cards.css">
+  <link rel="stylesheet" href="/styles/text.css">
+  <link rel="stylesheet" href="/styles/buttons.css">
+  <link rel="stylesheet" href="/styles/inputs.css">
+  <link rel="stylesheet" href="index.css">
+
+  <title>Meet-Dev</title>
 </head>
-
 <body>
+  
+  <header class="main-header">
+    <div class="container">
+      <h1 class="main-header-logo">Meet Devs</h1>
+      <nav class="filter-nav flex column">
+        <div class="search-input-area flex align-center">
+          <img src="/assets/search.svg" alt="">
+          <input class="search-input" placeholder="Pesquisar por um dev...">
+        </div>
+        <div class="header-nav-buttons flex">
+          <button class="header-nav-btn selected">Todos Usuários</button>
+          <button class="header-nav-btn">Meus Favoritos</button>
+        </div>
+      </nav>
+    </div>
+  </header>
 
+
+  <main class="container">
+
+    <section class="users">
+        <ul class="users-list flex" id="users-list">
+          <li class="flex column justify-between user-card">
+            <figure class="user-pic flex justify-center align-center">
+              <img src="" alt="">
+              <button class="favorite-user-btn flex align-center justify-center" id="favorite-user-btn">
+                <img src="/assets/heart.svg" alt="">
+              </button>
+            </figure>
+
+            <div class="flex about-user column justify-between">
+              <h3>Gabriel Miranda</h3>
+              <span>5013 Woodland St</span>
+              <span>45 anos</span>
+
+              <div class="flex contact-user">
+                <button>
+                  <img src="/assets/envelope.svg" alt="">
+                </button>
+                <button>
+                  <img src="/assets/phone.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </li>
+
+        <div class="fade-out"></div>
+        
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="index.js"></script>
+  <script src="/scripts/api.js"></script>
 </body>
-
 </html>
